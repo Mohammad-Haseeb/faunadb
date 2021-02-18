@@ -44,8 +44,22 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //   catch(error){
 //       console.log("Error", error);
 //   }
+     
 
+try{
+      let result= await adminClient.query(
+        q.CreateIndex({
+            name: 'posts_of_workers',
+            source:q.Collection('Workkers'),
+            terms:[{field:['data','title']}],
+        })
+      );
+      console.log("Result : ",result);
 
+}catch(error){
+   console.log(error);
+}
+       
 
 
 
