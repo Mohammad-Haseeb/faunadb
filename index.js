@@ -18,4 +18,26 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //    console.log("Error",error);
 //         }
 
+
+// Created a key for child database "gatsbyDataBase"
+
+
+// try{
+//       let result=await adminClient.query(
+//                q.CreateKey({
+//                    database:q.Database("gatsbyDataBase"),
+//                    role:"admin",
+//                })
+//       );
+//       console.log("Result : ",result.secret);
+// }
+// catch(error){
+//    console.log("Error",error)
+// }
+
+
+
+
+
+
 })()
