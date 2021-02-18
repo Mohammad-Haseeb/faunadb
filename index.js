@@ -34,16 +34,16 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 // catch(error){
 //    console.log("Error",error)
 // }
-
-  try{
-      let result=await adminClient.query(
-           q.CreateCollection({name:"Teachers"})
-      );
-   console.log("Result : ",result);
-  }
-  catch(error){
-      console.log("Error", error);
-  }
+//    Create Collections
+//   try{
+//       let result=await adminClient.query(
+//            q.CreateCollection({name:"Teachers"})
+//       );
+//    console.log("Result : ",result);
+//   }
+//   catch(error){
+//       console.log("Error", error);
+//   }
 
 
 
