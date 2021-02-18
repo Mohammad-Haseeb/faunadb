@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Mohammad-Haseeb/faunadb/issues"
   },
-  "homepage": "https://github.com/Mohammad-Haseeb/faunadb#readme",
-  "dependencies": {
-    "faunadb": "^4.1.0"
-  }
+  "homepage": "https://github.com/Mohammad-Haseeb/faunadb#readme"
 }
