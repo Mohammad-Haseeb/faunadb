@@ -61,6 +61,27 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 // }catch(error){
 //    console.log(error);
 // }
+
+// Create Documents in Specific Collections
+
+// try{
+//   let result=await adminClient.query(
+//       q.Create(
+//           q.Collection("Teachers"),
+//           {data:{title:"It Second data passing",
+//                  name:"Muhammad Haseeb Hussain",
+//                  faith:'Allah o Akbar'
+
+//         }},
+
+//       )
+
+//   );
+//   console.log(result);
+// }
+// catch(error){
+//     console.log(error);
+// }
        
 
 
