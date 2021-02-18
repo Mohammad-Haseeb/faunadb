@@ -18,7 +18,7 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //    console.log("Error",error);
 //         }
 
-
+// ****************************************************
 // Created a key for child database "gatsbyDataBase"
 
 
@@ -35,6 +35,15 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //    console.log("Error",error)
 // }
 
+  try{
+      let result=await adminClient.query(
+           q.CreateCollection({name:"Teachers"})
+      );
+   console.log("Result : ",result);
+  }
+  catch(error){
+      console.log("Error", error);
+  }
 
 
 
