@@ -115,6 +115,18 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //     console.log("Error : ",error);
 // }
 
+try{
+      var result= await adminClient.query(
+          q.Update(
+            q.Ref(q.Collection('Teachers'),'290904275063669253'),
+            {data:{title:"Checking Update via CRUD"}}
+          )
+      );
+      console.log(result);
+}
+catch(error){
+    console.log(error);
+}
 
 
 
