@@ -98,7 +98,23 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 // catch(error){
 //     console.log("Error : ",error);
 // }
-       
+//  Retrieve data through Index Searching
+
+//**** */ It will only search on collection in which you created a index
+        
+
+// try{
+//      var result=await adminClient.query(
+//          q.Get(
+//          q.Match(q.Index("posts_of_workers"),"It first data passing")
+//          )
+//          );
+//      console.log(result);
+// }
+// catch(error){
+//     console.log("Error : ",error);
+// }
+
 
 
 
