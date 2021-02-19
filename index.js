@@ -128,6 +128,32 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 //     console.log(error);
 // }
 
+//   Replacing Document
+// try{
+//     var result= await adminClient.query(
+//         q.Replace(
+//           q.Ref(q.Collection('Teachers'),'290904275063669253'),
+//           {data:{title:"Replacing"}}
+//         )
+//     );
+//     console.log(result);
+// }
+// catch(error){
+//   console.log(error);
+// }
+//   Deleting Document
+// try{
+//     var result= await adminClient.query(
+//         q.Delete(
+//           q.Ref(q.Collection('Teachers'),'290904275063669253'),
+         
+//         )
+//     );
+//     console.log(result);
+// }
+// catch(error){
+//   console.log(error);
+// }
 
 
 })()
