@@ -1,2 +1,2 @@
 # faunadb
- Faundb CRUD
+ Faunadb CRUD
