@@ -81,6 +81,22 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 // }
 // catch(error){
 //     console.log(error);
+
+// }
+
+//  Data Reterival with Reference
+
+// try{
+//    var result= await adminClient.query(
+//        q.Get(
+//          q.Ref(q.Collection('Teachers'),'290904275063669253')
+//        )
+//    );
+//    console.log("Result : ", result.data.title);
+
+// }
+// catch(error){
+//     console.log("Error : ",error);
 // }
        
 
