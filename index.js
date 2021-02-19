@@ -4,7 +4,7 @@ q=faunaDB.query;
 
 (async ()=>{
 
-var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHaRy9QTwTi" });
+var adminClient = new faunaDB.Client({ secret: "Enter Your key" });
 
             // createDaataBase
 
