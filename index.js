@@ -4,7 +4,7 @@ q=faunaDB.query;
 
 (async ()=>{
 
-var adminClient = new faunaDB.Client({ secret: "Enter Your key" });
+var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHaRy9QTwTi" });
 
             // createDaataBase
 
@@ -154,6 +154,21 @@ var adminClient = new faunaDB.Client({ secret: "Enter Your key" });
 // catch(error){
 //   console.log(error);
 // }
+        // ***Retrieveing  ALl documents from Collection 
+
+     try{
+              var result =await adminClient.query(
+                q.Map(
+                  q.Paginate(q.Documents(q.Collection("Workkers"))),
+                  q.Lambda("X", q.Get(q.Var("X")))
+                )
+              );
+              console.log("Result : ",result.data[0].ref);
+     }
+     catch(error){
+         console.log(error);
+     }
+
 
 
 })()
