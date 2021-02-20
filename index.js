@@ -154,20 +154,20 @@ var adminClient = new faunaDB.Client({ secret: "fnAECXwUqYACASM7mVf1cWGOIwauTZHa
 // catch(error){
 //   console.log(error);
 // }
-        // ***Retrieveing  ALl documents from Collection 
+        // ***Retrieveing  ALl Document from Specification Collection 
 
-     try{
-              var result =await adminClient.query(
-                q.Map(
-                  q.Paginate(q.Documents(q.Collection("Workkers"))),
-                  q.Lambda("X", q.Get(q.Var("X")))
-                )
-              );
-              console.log("Result : ",result.data[0].ref);
-     }
-     catch(error){
-         console.log(error);
-     }
+    //  try{
+    //           var result =await adminClient.query(
+    //             q.Map(
+    //               q.Paginate(q.Documents(q.Collection("Workkers"))),
+    //               q.Lambda("X", q.Get(q.Var("X")))
+    //             )
+    //           );
+    //           console.log("Result : ",result.data[0].ref.id);
+    //  }
+    //  catch(error){
+    //      console.log(error);
+    //  }
 
 
 
